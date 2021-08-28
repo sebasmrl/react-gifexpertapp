@@ -7,6 +7,7 @@ export const getGifs = async(category) => {
     const {data} = await resp.json();
     //console.log(data);
 
+    //map retorna un arreglo
     const gifs = data.map(img =>{
         return {
             id: img.id,
@@ -15,5 +16,5 @@ export const getGifs = async(category) => {
         }
     });
     //console.log(gifs)
-    return gifs;
+    return gifs; //retorna un arreglo de objetos [{id,title,url}, {id,title,url}]
 }

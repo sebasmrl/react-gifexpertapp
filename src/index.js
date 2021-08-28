@@ -6,7 +6,7 @@ import './index.css';
 
 ReactDOM.render(
     <GifExpertApp />,
-  document.getElementById('root')
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

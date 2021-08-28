@@ -10,6 +10,8 @@ export const GifExpertApp = () => {
         //setcategories(['Seven Deadly Sins',...categories]); //aqui puede venir una callback
         setcategories(cats => ['Seven Deadly Sins',...cats]); //aqui puede venir una callback
     } */
+
+    //retormo un fragmento
     return (
         <>
             <h2>GifExpertApp</h2>
