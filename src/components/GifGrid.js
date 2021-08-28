@@ -9,7 +9,7 @@ export const GifGrid = ({category}) => {
     //mando la categoria para hacer el  getGifs(category) dentro del customhook
     const {data: images, loading } = useFetchGifs(category); //images = [{id,title,url}, {id,title,url}]
     //console.log(loading)
-    
+    //un nuevo mensaje en GifGrid el 27/08/2021 a la 5:49pm
     
     return (
         <>
