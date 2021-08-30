@@ -2,6 +2,29 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Configuracion de pruebas
+
+Instalar lo siguiente:
+    
+    npm i --save-dev enzyme enzyme-adapter-react-16
+    npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+    npm install --save-dev enzyme-to-json
+
+En setupTest agregar la siguiente configuraciones despues de instalado lo necesario:
+
+    import Enzyme from 'enzyme';
+    import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+    import {createSerializer} from 'enzyme-to-json'
+    Enzyme.configure({ adapter: new Adapter() });
+    expect.addSnapshotSerializer(createSerializer({mode:'deep'}))
+
+Para Hacer pruebas con customHooks
+Los hooks no se pueden probar a menos que esten dentro de un componente de react
+
+    npm install --save-dev @testing-library/react-hooks
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
